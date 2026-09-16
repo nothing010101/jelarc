@@ -273,15 +273,22 @@ section{padding:84px 0;}
   box-shadow:7px 8px 0 rgba(62,34,51,0.14);
   transition:transform 0.2s ease;
 }
+.token-card:hover{transform:translateY(-6px) rotate(0deg) !important;}
 .token-card:nth-child(2){transform:rotate(-1.2deg);}
 .token-card:nth-child(1){transform:rotate(1deg);}
 .token-card:nth-child(3){transform:rotate(-0.6deg);}
-.token-card .icon{
-  width:46px;height:46px;border-radius:14px;
-  background:var(--jelly-red);
+.token-card .sticker{
+  width:96px;height:96px;border-radius:22px;
+  overflow:hidden;
   margin-bottom:18px;
-  box-shadow:inset -5px -6px 0 rgba(0,0,0,0.15), inset 4px 5px 0 rgba(255,255,255,0.28);
+  border:2.5px solid var(--plum);
+  box-shadow:3px 4px 0 rgba(62,34,51,0.18);
 }
+.token-card .sticker img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform 0.35s cubic-bezier(.5,0,.2,1.4);
+}
+.token-card:hover .sticker img{transform:scale(1.12) rotate(-3deg);}
 .token-card h3{font-size:1.15rem;margin-bottom:8px;color:var(--jelly-red-deep);}
 .token-card p{color:var(--plum-soft);font-size:0.98rem;}
 
@@ -431,17 +438,17 @@ footer .disclaimer{max-width:480px;margin:0 auto;font-size:0.82rem;color:var(--p
     </div>
     <div class="token-grid">
       <div class="token-card">
-        <div class="icon"></div>
+        <div class="sticker"><img src="jelly-confetti.jpg" alt="Jelly celebrating with coins"></div>
         <h3>Fixed 1,000,000,000 Supply</h3>
         <p>The full supply of $JELLY was minted on day one. No further minting, no hidden unlocks, no surprises down the road.</p>
       </div>
       <div class="token-card">
-        <div class="icon"></div>
+        <div class="sticker"><img src="jelly-angry.jpg" alt="Jelly guarding the vault"></div>
         <h3>Liquidity Locked Permanently</h3>
         <p>LP tokens are locked for good. The pool that lets $JELLY trade isn't going anywhere, and neither is the jelly.</p>
       </div>
       <div class="token-card">
-        <div class="icon"></div>
+        <div class="sticker"><img src="jelly-running.jpg" alt="Jelly running fast"></div>
         <h3>Built on Arc Chain</h3>
         <p>Fast, low-fee transactions so you can buy, hold, and swap $JELLY without the gas fees getting in the way of the fun.</p>
       </div>
